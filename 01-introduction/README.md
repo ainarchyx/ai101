@@ -1,6 +1,6 @@
 # AI101 · 01 — Introduction: what AI actually is
 
-- **Video:** coming to YouTube soon; this page will link it. 10:30, subtitles in 9 languages.
+- **Video:** https://youtu.be/d9tA7JGl3sk (10:31, subtitles in 9 languages)
 - **Task:** introduce yourself in BUILD → https://t.me/ainarchyx
 - **Nothing to install** in this lesson.
 
@@ -127,3 +127,4 @@ The ELIZA conversation in the video is our own example, written in ELIZA's style
 ## Changes to this page
 
 - 2026-11-22 — first version.
+- 2026-11-22 — video link added.
