@@ -19,8 +19,8 @@ Made by **ainarchy**, an open group of people who think everyone should be able 
 | # | Lesson | |
 |---|---|---|
 | 01 | [Introduction: what AI actually is](01-introduction/) | [video](https://youtu.be/d9tA7JGl3sk) |
-| 02 | How a language model works | in production |
-| 03 | What a model actually is | planned |
+| 02 | [How a language model works](02-how-a-language-model-works/) | [video](https://youtu.be/7wPjNNU4W5g) |
+| 03 | What a model actually is | in production |
 | 04 | Open and closed | planned |
 | 05 | Will it run on my computer? | planned |
 
