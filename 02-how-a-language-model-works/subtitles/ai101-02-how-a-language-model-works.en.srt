@@ -1,0 +1,648 @@
+1
+00:00:00,800 --> 00:00:03,477
+Open the keyboard on your phone and start
+a message.
+
+2
+00:00:03,797 --> 00:00:06,148
+Above the keys, it suggests the next word.
+
+3
+00:00:06,468 --> 00:00:08,817
+Tap the middle suggestion, again and
+again.
+
+4
+00:00:09,137 --> 00:00:12,846
+You get a sentence that sounds a bit like
+you, and means almost nothing.
+
+5
+00:00:13,992 --> 00:00:16,938
+Now take the same idea and scale it up
+enormously.
+
+6
+00:00:17,258 --> 00:00:20,112
+Train it on a huge share of everything
+written online.
+
+7
+00:00:20,432 --> 00:00:22,030
+It stops producing nonsense.
+
+8
+00:00:22,350 --> 00:00:25,459
+It writes essays, answers questions and
+fixes code.
+
+9
+00:00:25,779 --> 00:00:27,056
+That's a language model.
+
+10
+00:00:27,376 --> 00:00:31,186
+This lesson is about how it works, and why
+it sometimes makes things up.
+
+11
+00:00:39,325 --> 00:00:41,008
+A computer can't read words.
+
+12
+00:00:41,328 --> 00:00:42,936
+It can only work with numbers.
+
+13
+00:00:43,256 --> 00:00:47,172
+So the first step is to cut text into
+small pieces, called tokens.
+
+14
+00:00:47,492 --> 00:00:50,104
+A token can be a whole word, part of a
+word,
+
+15
+00:00:50,104 --> 00:00:52,657
+or a single character such as a full stop.
+
+16
+00:00:52,977 --> 00:00:57,918
+Each token has a number, its ID, and the
+model only ever sees those numbers.
+
+17
+00:00:59,075 --> 00:01:01,596
+Common words are usually a single token.
+
+18
+00:01:01,916 --> 00:01:04,638
+Longer or rarer words get split into
+pieces.
+
+19
+00:01:04,958 --> 00:01:07,454
+"Unbelievable" might become three tokens.
+
+20
+00:01:07,774 --> 00:01:10,089
+The exact pieces depend on the model;
+
+21
+00:01:10,089 --> 00:01:14,094
+each one has its own way of splitting
+text, called a tokenizer.
+
+22
+00:01:15,242 --> 00:01:18,765
+The full list of tokens a model knows is
+its vocabulary.
+
+23
+00:01:19,085 --> 00:01:23,699
+Meta's Llama 3 models, for example, have
+about a hundred and twenty-eight thousand.
+
+24
+00:01:24,019 --> 00:01:28,370
+A rough rule for English: a hundred tokens
+is about seventy-five words.
+
+25
+00:01:29,533 --> 00:01:33,144
+Other languages often need more tokens to
+say the same thing.
+
+26
+00:01:33,464 --> 00:01:36,886
+A 2023 study found that the same text can
+take up
+
+27
+00:01:36,886 --> 00:01:41,285
+to fifteen times as many tokens in one
+language as in another.
+
+28
+00:01:41,604 --> 00:01:43,668
+More tokens means slower answers,
+
+29
+00:01:43,668 --> 00:01:47,796
+higher prices on paid services, and less
+text fitting in at once.
+
+30
+00:01:48,950 --> 00:01:51,500
+Tokens also explain a famous mistake.
+
+31
+00:01:51,820 --> 00:01:55,114
+Ask how many times the letter R appears in
+"strawberry",
+
+32
+00:01:55,114 --> 00:01:57,702
+and for a long time many chatbots said
+two.
+
+33
+00:01:58,022 --> 00:02:01,048
+The model doesn't see letters; it sees a
+couple of tokens,
+
+34
+00:02:01,048 --> 00:02:02,926
+something like "straw" and "berry".
+
+35
+00:02:03,246 --> 00:02:06,377
+It's being asked about letters it never
+directly sees.
+
+36
+00:02:10,117 --> 00:02:11,233
+Now the heart of it.
+
+37
+00:02:11,553 --> 00:02:13,630
+You give the model a row of tokens.
+
+38
+00:02:13,950 --> 00:02:17,608
+It gives back one thing: for every token
+in its vocabulary,
+
+39
+00:02:17,608 --> 00:02:20,027
+how likely that token is to come next.
+
+40
+00:02:20,347 --> 00:02:22,378
+After "The capital of France is",
+
+41
+00:02:22,378 --> 00:02:25,701
+the token "Paris" gets almost all of the
+probability.
+
+42
+00:02:26,021 --> 00:02:27,613
+Most tokens get almost none.
+
+43
+00:02:28,783 --> 00:02:30,698
+Then the program picks one token,
+
+44
+00:02:30,698 --> 00:02:33,773
+adds it to the end, and feeds the whole
+row back in.
+
+45
+00:02:34,093 --> 00:02:35,424
+Predict, pick, repeat.
+
+46
+00:02:35,744 --> 00:02:38,612
+One token at a time, until the answer is
+finished.
+
+47
+00:02:38,932 --> 00:02:41,796
+When you watch a chatbot's reply appear
+piece by piece,
+
+48
+00:02:41,796 --> 00:02:43,775
+that is literally what you're seeing.
+
+49
+00:02:44,908 --> 00:02:47,883
+The pick isn't always the single most
+likely token.
+
+50
+00:02:48,203 --> 00:02:50,204
+Usually it's drawn from the top few,
+
+51
+00:02:50,204 --> 00:02:54,041
+which is why the same question can get a
+different answer each time.
+
+52
+00:02:54,361 --> 00:02:57,085
+Lesson ten shows the setting that controls
+this.
+
+53
+00:02:57,405 --> 00:02:59,875
+And when a chatbot "thinks" before it
+answers,
+
+54
+00:02:59,875 --> 00:03:02,721
+that thinking is more tokens, produced the
+same way.
+
+55
+00:03:06,450 --> 00:03:09,545
+"Just predicting the next word" sounds
+like a party trick.
+
+56
+00:03:09,865 --> 00:03:11,017
+Here's why it isn't.
+
+57
+00:03:11,337 --> 00:03:14,545
+To predict text well, you need whatever
+helps you predict it.
+
+58
+00:03:14,865 --> 00:03:17,797
+"She blank to the shop yesterday." That
+takes grammar.
+
+59
+00:03:18,117 --> 00:03:21,003
+"The Eiffel Tower is in blank." That takes
+facts.
+
+60
+00:03:21,323 --> 00:03:24,652
+"Twelve plus seven equals blank." That
+takes arithmetic.
+
+61
+00:03:24,972 --> 00:03:28,270
+"Bonjour, in English, is blank." That
+takes translation.
+
+62
+00:03:29,408 --> 00:03:32,315
+Now imagine the last page of a detective
+novel.
+
+63
+00:03:32,635 --> 00:03:33,963
+"And the murderer is blank."
+
+64
+00:03:34,283 --> 00:03:37,058
+To guess that name, you'd have to follow
+the whole plot.
+
+65
+00:03:38,200 --> 00:03:41,339
+Nobody programmed grammar or facts into
+these models.
+
+66
+00:03:41,659 --> 00:03:45,393
+They picked them up as a side effect of
+getting better at one simple game.
+
+67
+00:03:45,713 --> 00:03:48,599
+But notice what they learned: what text
+tends to say.
+
+68
+00:03:48,919 --> 00:03:51,245
+That's usually, but not always, what's
+true.
+
+69
+00:03:54,992 --> 00:03:57,523
+A model's life has two very different
+phases.
+
+70
+00:03:57,843 --> 00:03:59,066
+The first is training.
+
+71
+00:03:59,386 --> 00:04:01,331
+The model starts as random numbers.
+
+72
+00:04:01,651 --> 00:04:04,602
+It's shown a stretch of text with the next
+token hidden,
+
+73
+00:04:04,602 --> 00:04:06,973
+makes a guess, and is told the right
+answer.
+
+74
+00:04:07,293 --> 00:04:11,434
+Every number that pushed it towards the
+wrong guess is nudged a tiny bit.
+
+75
+00:04:11,754 --> 00:04:15,128
+Then the next stretch of text, and the
+next, trillions of times.
+
+76
+00:04:15,448 --> 00:04:20,230
+Meta says its Llama 3 models were trained
+on more than fifteen trillion tokens.
+
+77
+00:04:20,550 --> 00:04:24,842
+That takes weeks or months, on thousands
+of graphics chips running day and night.
+
+78
+00:04:25,992 --> 00:04:27,954
+What comes out is called a base model.
+
+79
+00:04:28,274 --> 00:04:30,266
+It continues text, nothing more.
+
+80
+00:04:30,586 --> 00:04:33,795
+Ask it a question and it might answer with
+more questions,
+
+81
+00:04:33,795 --> 00:04:35,454
+like a page from a quiz book.
+
+82
+00:04:35,774 --> 00:04:37,137
+So there's a second stage.
+
+83
+00:04:37,457 --> 00:04:41,283
+The model is trained further on examples
+of helpful conversations,
+
+84
+00:04:41,283 --> 00:04:43,602
+and on people's ratings of its answers.
+
+85
+00:04:43,922 --> 00:04:46,756
+That's what turns a text-continuer into an
+assistant.
+
+86
+00:04:47,908 --> 00:04:51,347
+The second phase is running the model,
+also called inference.
+
+87
+00:04:51,667 --> 00:04:54,195
+Training is over, and the numbers are
+frozen.
+
+88
+00:04:54,515 --> 00:04:56,750
+Your message goes in, tokens come out.
+
+89
+00:04:57,070 --> 00:04:59,682
+The model does not learn from your
+conversation;
+
+90
+00:04:59,682 --> 00:05:01,913
+its numbers don't change while you chat.
+
+91
+00:05:02,233 --> 00:05:06,809
+Whether a company keeps your chats to train its next model is a separate
+question,
+
+92
+00:05:06,809 --> 00:05:08,316
+and lesson four covers it.
+
+93
+00:05:09,450 --> 00:05:12,937
+So how does a chatbot remember what you
+said three messages ago?
+
+94
+00:05:13,397 --> 00:05:14,125
+It doesn't.
+
+95
+00:05:14,445 --> 00:05:18,055
+The app sends the whole conversation back
+in, every single time.
+
+96
+00:05:18,375 --> 00:05:22,739
+The amount of text a model can take in at
+once is called its context window.
+
+97
+00:05:23,059 --> 00:05:26,403
+In a very long chat, the oldest parts may
+no longer fit.
+
+98
+00:05:26,723 --> 00:05:28,717
+And when an app says it remembers you,
+
+99
+00:05:28,717 --> 00:05:31,813
+it's saving notes and adding them to the
+text it sends in.
+
+100
+00:05:35,533 --> 00:05:37,429
+Now lesson one's warning makes sense.
+
+101
+00:05:37,749 --> 00:05:40,669
+A language model produces likely next
+tokens.
+
+102
+00:05:40,989 --> 00:05:43,672
+There's no built-in step that checks
+whether they're true.
+
+103
+00:05:43,992 --> 00:05:47,090
+When an answer appeared in its training
+text many times,
+
+104
+00:05:47,090 --> 00:05:48,915
+likely and true usually line up.
+
+105
+00:05:49,235 --> 00:05:53,067
+When it didn't, the model still produces
+the most likely-sounding text.
+
+106
+00:05:53,387 --> 00:05:54,997
+A name that sounds like a name.
+
+107
+00:05:55,317 --> 00:05:56,903
+A date that looks like a date.
+
+108
+00:05:57,223 --> 00:05:58,829
+A source that looks like a source.
+
+109
+00:05:59,992 --> 00:06:05,149
+In 2023, two lawyers in New York filed a
+brief that cited six court cases.
+
+110
+00:06:05,469 --> 00:06:07,760
+ChatGPT had supplied them.
+
+111
+00:06:08,080 --> 00:06:09,575
+None of the six existed.
+
+112
+00:06:09,895 --> 00:06:13,440
+The judge fined the lawyers and their firm
+five thousand dollars.
+
+113
+00:06:13,760 --> 00:06:17,156
+The fake cases looked real: names, quotes,
+citations.
+
+114
+00:06:18,325 --> 00:06:22,489
+A 2025 paper from OpenAI adds another
+reason.
+
+115
+00:06:22,809 --> 00:06:26,257
+The way models are trained and tested
+often rewards guessing.
+
+116
+00:06:26,577 --> 00:06:30,342
+Think of a multiple-choice exam where a
+blank answer scores zero.
+
+117
+00:06:30,662 --> 00:06:32,043
+Guessing sometimes scores,
+
+118
+00:06:32,043 --> 00:06:35,813
+so a model that bluffs looks better than
+one that says "I don't know".
+
+119
+00:06:36,950 --> 00:06:39,168
+So the rule from lesson one gets sharper.
+
+120
+00:06:39,488 --> 00:06:43,390
+The more specific, rare or recent a fact
+is, the more you should check it.
+
+121
+00:06:43,710 --> 00:06:46,697
+Names, numbers, dates, quotes and links
+most of all.
+
+122
+00:06:47,017 --> 00:06:49,912
+It helps to give the model the text you're
+asking about,
+
+123
+00:06:49,912 --> 00:06:51,669
+instead of relying on its memory.
+
+124
+00:06:51,989 --> 00:06:53,879
+And if it gives you a source, open it.
+
+125
+00:06:57,617 --> 00:06:58,746
+Let's put it together.
+
+126
+00:06:59,066 --> 00:07:02,162
+Text becomes tokens, and tokens become
+numbers.
+
+127
+00:07:02,482 --> 00:07:05,326
+The model predicts the next token, one at
+a time.
+
+128
+00:07:05,646 --> 00:07:08,425
+Training sets its numbers, once, at
+enormous cost.
+
+129
+00:07:08,745 --> 00:07:12,115
+Running uses those numbers, and they don't
+change while you chat.
+
+130
+00:07:12,435 --> 00:07:16,565
+And because it predicts what's likely, not
+what's true, it can be fluent and wrong.
+
+131
+00:07:17,700 --> 00:07:19,121
+Your task for this lesson.
+
+132
+00:07:19,441 --> 00:07:23,135
+Find a question that a chatbot answered
+confidently and wrongly.
+
+133
+00:07:23,455 --> 00:07:27,602
+Post it in BUILD: the question, the answer, and how you found out it was
+wrong.
+
+134
+00:07:27,922 --> 00:07:31,019
+Any chatbot is fine, and leave out
+anything personal.
+
+135
+00:07:31,339 --> 00:07:34,275
+If you're stuck, ask for a source on
+something specific,
+
+136
+00:07:34,275 --> 00:07:35,796
+and check whether it exists.
+
+137
+00:07:36,950 --> 00:07:39,241
+Next time: what a model actually is.
+
+138
+00:07:39,561 --> 00:07:42,879
+A file full of numbers, and why making one
+costs millions,
+
+139
+00:07:42,879 --> 00:07:47,170
+while running one on your own computer
+costs little more than electricity.
+
+140
+00:07:47,490 --> 00:07:48,724
+See you in lesson three.

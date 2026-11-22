@@ -1,0 +1,664 @@
+1
+00:00:00,800 --> 00:00:03,747
+Ouvrez le clavier de votre
+téléphone et commencez un message.
+
+2
+00:00:03,797 --> 00:00:06,418
+Au-dessus des touches, il
+suggère le mot suivant.
+
+3
+00:00:06,468 --> 00:00:09,087
+Touchez la suggestion du
+milieu, encore et encore.
+
+4
+00:00:09,137 --> 00:00:13,846
+Vous obtenez une phrase qui vous ressemble
+un peu et ne veut presque rien dire.
+
+5
+00:00:13,992 --> 00:00:17,208
+Maintenant, prenez la même idée
+et changez énormément d'échelle.
+
+6
+00:00:17,258 --> 00:00:20,382
+Entraînez-la sur une immense partie
+de tout ce qui a été écrit en ligne.
+
+7
+00:00:20,432 --> 00:00:22,300
+Elle cesse de dire n'importe quoi.
+
+8
+00:00:22,350 --> 00:00:25,729
+Elle rédige des essais, répond
+aux questions et corrige du code.
+
+9
+00:00:25,779 --> 00:00:27,326
+C'est un modèle de langage.
+
+10
+00:00:27,376 --> 00:00:32,186
+Cette leçon explique comment il fonctionne
+et pourquoi il invente parfois.
+
+11
+00:00:39,325 --> 00:00:41,278
+Un ordinateur ne sait pas lire des mots.
+
+12
+00:00:41,328 --> 00:00:43,206
+Il ne sait travailler qu'avec des nombres.
+
+13
+00:00:43,256 --> 00:00:47,442
+La première étape est donc de couper le
+texte en petits morceaux, appelés tokens.
+
+14
+00:00:47,492 --> 00:00:50,104
+Un token peut être un mot
+entier, un morceau de mot
+
+15
+00:00:50,104 --> 00:00:52,927
+ou un seul caractère, comme un point.
+
+16
+00:00:52,977 --> 00:00:58,918
+Chaque token a un numéro, son identifiant,
+et le modèle ne voit que ces numéros.
+
+17
+00:00:59,075 --> 00:01:01,866
+Les mots courants forment
+en général un seul token.
+
+18
+00:01:01,916 --> 00:01:04,908
+Les mots plus longs ou plus
+rares sont découpés en morceaux.
+
+19
+00:01:04,958 --> 00:01:07,724
+« Unbelievable » peut
+devenir trois tokens.
+
+20
+00:01:07,774 --> 00:01:10,089
+Les morceaux exacts dépendent du modèle ;
+
+21
+00:01:10,089 --> 00:01:15,094
+chacun a sa propre façon de découper
+le texte, appelée tokenizer.
+
+22
+00:01:15,242 --> 00:01:19,035
+La liste complète des tokens qu'un
+modèle connaît, c'est son vocabulaire.
+
+23
+00:01:19,085 --> 00:01:23,969
+Les modèles Llama 3 de Meta, par exemple,
+en ont environ cent vingt-huit mille.
+
+24
+00:01:24,019 --> 00:01:29,370
+Règle approximative pour l'anglais : cent
+tokens font environ soixante-quinze mots.
+
+25
+00:01:29,533 --> 00:01:33,414
+D'autres langues ont souvent besoin de
+plus de tokens pour dire la même chose.
+
+26
+00:01:33,464 --> 00:01:36,886
+Une étude de 2023 a montré que
+le même texte peut prendre
+
+27
+00:01:36,886 --> 00:01:41,554
+jusqu'à quinze fois plus de tokens
+dans une langue que dans une autre.
+
+28
+00:01:41,604 --> 00:01:43,668
+Plus de tokens, ce sont
+des réponses plus lentes,
+
+29
+00:01:43,668 --> 00:01:48,796
+des prix plus élevés sur les services payants,
+et moins de texte qui tient d'un coup.
+
+30
+00:01:48,950 --> 00:01:51,770
+Les tokens expliquent
+aussi une erreur célèbre.
+
+31
+00:01:51,820 --> 00:01:55,114
+Demandez combien de fois la lettre
+R apparaît dans « strawberry »,
+
+32
+00:01:55,114 --> 00:01:57,972
+et pendant longtemps beaucoup
+de chatbots répondaient deux.
+
+33
+00:01:58,022 --> 00:02:01,048
+Le modèle ne voit pas de lettres
+; il voit quelques tokens,
+
+34
+00:02:01,048 --> 00:02:03,196
+quelque chose comme «
+straw » et « berry ».
+
+35
+00:02:03,246 --> 00:02:07,377
+On l'interroge sur des lettres
+qu'il ne voit jamais directement.
+
+36
+00:02:10,117 --> 00:02:11,503
+Passons au cœur du sujet.
+
+37
+00:02:11,553 --> 00:02:13,900
+Vous donnez au modèle
+une rangée de tokens.
+
+38
+00:02:13,950 --> 00:02:17,608
+Il ne rend qu'une chose : pour
+chaque token de son vocabulaire,
+
+39
+00:02:17,608 --> 00:02:20,297
+la probabilité que ce
+token vienne ensuite.
+
+40
+00:02:20,347 --> 00:02:22,378
+Après « The capital of France is »,
+
+41
+00:02:22,378 --> 00:02:25,971
+le token « Paris » reçoit
+presque toute la probabilité.
+
+42
+00:02:26,021 --> 00:02:28,613
+La plupart des tokens ne
+reçoivent presque rien.
+
+43
+00:02:28,783 --> 00:02:30,698
+Puis le programme choisit un token,
+
+44
+00:02:30,698 --> 00:02:34,043
+l'ajoute à la fin et
+renvoie toute la rangée.
+
+45
+00:02:34,093 --> 00:02:35,694
+Prédire, choisir, recommencer.
+
+46
+00:02:35,744 --> 00:02:38,882
+Un token à la fois, jusqu'à
+ce que la réponse soit finie.
+
+47
+00:02:38,932 --> 00:02:41,796
+Quand la réponse d'un chatbot
+apparaît morceau par morceau,
+
+48
+00:02:41,796 --> 00:02:44,775
+c'est littéralement cela que vous voyez.
+
+49
+00:02:44,908 --> 00:02:48,153
+Le choix n'est pas toujours
+le token le plus probable.
+
+50
+00:02:48,203 --> 00:02:50,204
+En général, il est tiré
+parmi les premiers,
+
+51
+00:02:50,204 --> 00:02:54,311
+c'est pourquoi la même question peut recevoir
+une réponse différente à chaque fois.
+
+52
+00:02:54,361 --> 00:02:57,355
+La leçon dix montre le
+réglage qui contrôle cela.
+
+53
+00:02:57,405 --> 00:02:59,875
+Et quand un chatbot «
+réfléchit » avant de répondre,
+
+54
+00:02:59,875 --> 00:03:03,721
+cette réflexion, ce sont d'autres
+tokens, produits de la même façon.
+
+55
+00:03:06,450 --> 00:03:09,815
+« Juste prédire le mot suivant », ça
+ressemble à un tour de passe-passe.
+
+56
+00:03:09,865 --> 00:03:11,287
+Voici pourquoi ce n'en est pas un.
+
+57
+00:03:11,337 --> 00:03:14,815
+Pour bien prédire un texte, il faut
+tout ce qui aide à le prédire.
+
+58
+00:03:14,865 --> 00:03:18,067
+« She ___ to the shop yesterday.
+» Il faut de la grammaire.
+
+59
+00:03:18,117 --> 00:03:21,273
+« The Eiffel Tower is in ___.
+» Il faut des connaissances.
+
+60
+00:03:21,323 --> 00:03:24,922
+« Douze plus sept égale ___.
+» Il faut de l'arithmétique.
+
+61
+00:03:24,972 --> 00:03:29,270
+« Bonjour, en anglais, se dit
+___. » Il faut savoir traduire.
+
+62
+00:03:29,408 --> 00:03:32,585
+Imaginez maintenant la dernière
+page d'un roman policier.
+
+63
+00:03:32,635 --> 00:03:34,233
+« Et le meurtrier est ___. »
+
+64
+00:03:34,283 --> 00:03:38,058
+Pour deviner ce nom, il faudrait
+suivre toute l'intrigue.
+
+65
+00:03:38,200 --> 00:03:41,609
+Personne n'a programmé la grammaire
+ou les faits dans ces modèles.
+
+66
+00:03:41,659 --> 00:03:45,663
+Ils les ont acquis comme effet secondaire
+en progressant à un seul jeu simple.
+
+67
+00:03:45,713 --> 00:03:48,869
+Mais remarquez ce qu'ils ont appris :
+ce que les textes ont tendance à dire.
+
+68
+00:03:48,919 --> 00:03:52,245
+C'est en général ce qui est
+vrai, mais pas toujours.
+
+69
+00:03:54,992 --> 00:03:57,793
+La vie d'un modèle comporte
+deux phases très différentes.
+
+70
+00:03:57,843 --> 00:03:59,336
+La première, c'est l'entraînement.
+
+71
+00:03:59,386 --> 00:04:01,601
+Le modèle commence comme
+des nombres aléatoires.
+
+72
+00:04:01,651 --> 00:04:04,602
+On lui montre un extrait de texte
+dont le token suivant est caché,
+
+73
+00:04:04,602 --> 00:04:07,243
+il fait une supposition, puis
+on lui donne la bonne réponse.
+
+74
+00:04:07,293 --> 00:04:11,704
+Chaque nombre qui l'a poussé vers la
+mauvaise réponse est légèrement ajusté.
+
+75
+00:04:11,754 --> 00:04:15,398
+Puis l'extrait suivant, et le suivant,
+des milliers de milliards de fois.
+
+76
+00:04:15,448 --> 00:04:20,500
+Meta dit avoir entraîné ses modèles Llama 3
+sur plus de quinze mille milliards de tokens.
+
+77
+00:04:20,550 --> 00:04:25,842
+Cela prend des semaines ou des mois, sur des milliers
+de puces graphiques qui tournent jour et nuit.
+
+78
+00:04:25,992 --> 00:04:28,224
+Ce qui en sort s'appelle
+un modèle de base.
+
+79
+00:04:28,274 --> 00:04:30,536
+Il prolonge du texte, rien de plus.
+
+80
+00:04:30,586 --> 00:04:33,795
+Posez-lui une question, il risque
+de répondre par d'autres questions,
+
+81
+00:04:33,795 --> 00:04:35,724
+comme une page de livre de quiz.
+
+82
+00:04:35,774 --> 00:04:37,407
+D'où une deuxième étape.
+
+83
+00:04:37,457 --> 00:04:41,283
+On continue d'entraîner le modèle sur
+des exemples de conversations utiles
+
+84
+00:04:41,283 --> 00:04:43,872
+et sur les notes que des
+gens donnent à ses réponses.
+
+85
+00:04:43,922 --> 00:04:47,756
+C'est ce qui transforme un
+prolongateur de texte en assistant.
+
+86
+00:04:47,908 --> 00:04:51,617
+La seconde phase, c'est faire tourner le
+modèle, ce qu'on appelle aussi l'inférence.
+
+87
+00:04:51,667 --> 00:04:54,465
+L'entraînement est terminé,
+et les nombres sont figés.
+
+88
+00:04:54,515 --> 00:04:57,020
+Votre message entre, des tokens sortent.
+
+89
+00:04:57,070 --> 00:04:59,682
+Le modèle n'apprend pas
+de votre conversation ;
+
+90
+00:04:59,682 --> 00:05:02,183
+ses nombres ne changent pas
+pendant que vous discutez.
+
+91
+00:05:02,233 --> 00:05:06,809
+Qu'une entreprise garde vos conversations pour
+entraîner son prochain modèle est une autre question,
+
+92
+00:05:06,809 --> 00:05:09,316
+et la leçon quatre en parle.
+
+93
+00:05:09,450 --> 00:05:13,347
+Alors comment un chatbot se souvient-il de ce
+que vous avez dit trois messages plus tôt ?
+
+94
+00:05:13,397 --> 00:05:14,395
+Il ne s'en souvient pas.
+
+95
+00:05:14,445 --> 00:05:18,325
+L'application renvoie toute la
+conversation, à chaque fois.
+
+96
+00:05:18,375 --> 00:05:23,009
+La quantité de texte qu'un modèle peut recevoir
+d'un coup s'appelle sa fenêtre de contexte.
+
+97
+00:05:23,059 --> 00:05:26,673
+Dans une très longue conversation, les parties
+les plus anciennes peuvent ne plus tenir.
+
+98
+00:05:26,723 --> 00:05:28,717
+Et quand une appli dit
+se souvenir de vous,
+
+99
+00:05:28,717 --> 00:05:32,813
+elle enregistre des notes et les
+ajoute au texte qu'elle envoie.
+
+100
+00:05:35,533 --> 00:05:37,699
+L'avertissement de la leçon
+un prend alors son sens.
+
+101
+00:05:37,749 --> 00:05:40,939
+Un modèle de langage produit
+des tokens suivants probables.
+
+102
+00:05:40,989 --> 00:05:43,942
+Aucune étape intégrée ne
+vérifie s'ils sont vrais.
+
+103
+00:05:43,992 --> 00:05:47,090
+Quand une réponse figurait souvent
+dans ses textes d'entraînement,
+
+104
+00:05:47,090 --> 00:05:49,185
+probable et vrai coïncident en général.
+
+105
+00:05:49,235 --> 00:05:53,337
+Sinon, le modèle produit quand même
+le texte qui sonne le plus probable.
+
+106
+00:05:53,387 --> 00:05:55,267
+Un nom qui sonne comme un nom.
+
+107
+00:05:55,317 --> 00:05:57,173
+Une date qui ressemble à une date.
+
+108
+00:05:57,223 --> 00:05:59,829
+Une source qui ressemble à une source.
+
+109
+00:05:59,992 --> 00:06:05,419
+En 2023, deux avocats de New York ont déposé
+un mémoire citant six affaires judiciaires.
+
+110
+00:06:05,469 --> 00:06:08,030
+C'est ChatGPT qui les leur avait fournies.
+
+111
+00:06:08,080 --> 00:06:09,845
+Aucune des six n'existait.
+
+112
+00:06:09,895 --> 00:06:13,710
+Le juge a infligé aux avocats et à leur
+cabinet une amende de cinq mille dollars.
+
+113
+00:06:13,760 --> 00:06:18,156
+Les fausses affaires avaient l'air
+vraies : noms, citations, références.
+
+114
+00:06:18,325 --> 00:06:22,759
+Un article d'OpenAI de 2025
+ajoute une autre raison.
+
+115
+00:06:22,809 --> 00:06:26,527
+La façon dont on entraîne et teste les modèles
+récompense souvent le fait de deviner.
+
+116
+00:06:26,577 --> 00:06:30,612
+Pensez à un QCM où une réponse
+laissée vide vaut zéro.
+
+117
+00:06:30,662 --> 00:06:32,043
+Deviner rapporte parfois,
+
+118
+00:06:32,043 --> 00:06:36,813
+donc un modèle qui bluffe paraît meilleur
+qu'un modèle qui dit « je ne sais pas ».
+
+119
+00:06:36,950 --> 00:06:39,438
+La règle de la leçon un se précise donc.
+
+120
+00:06:39,488 --> 00:06:43,660
+Plus un fait est précis, rare ou
+récent, plus il faut le vérifier.
+
+121
+00:06:43,710 --> 00:06:46,967
+Surtout les noms, les nombres, les
+dates, les citations et les liens.
+
+122
+00:06:47,017 --> 00:06:49,912
+Aidez-le en lui donnant le texte concerné,
+
+123
+00:06:49,912 --> 00:06:51,939
+plutôt que de compter sur sa mémoire.
+
+124
+00:06:51,989 --> 00:06:54,879
+Et s'il vous donne une source, ouvrez-la.
+
+125
+00:06:57,617 --> 00:06:59,016
+Récapitulons.
+
+126
+00:06:59,066 --> 00:07:02,432
+Le texte devient des tokens, et
+les tokens deviennent des nombres.
+
+127
+00:07:02,482 --> 00:07:05,596
+Le modèle prédit le token
+suivant, un à la fois.
+
+128
+00:07:05,646 --> 00:07:08,695
+L'entraînement fixe ses nombres,
+une fois, à un coût énorme.
+
+129
+00:07:08,745 --> 00:07:12,385
+Le faire tourner utilise ces nombres, qui
+ne changent pas pendant que vous discutez.
+
+130
+00:07:12,435 --> 00:07:17,565
+Et comme il prédit le probable, pas le
+vrai, il peut être fluide et se tromper.
+
+131
+00:07:17,700 --> 00:07:19,391
+Votre tâche pour cette leçon.
+
+132
+00:07:19,441 --> 00:07:23,405
+Trouvez une question à laquelle un chatbot
+a répondu avec assurance, et faux.
+
+133
+00:07:23,455 --> 00:07:27,872
+Publiez-la dans BUILD : la question, la réponse,
+et comment vous avez su que c'était faux.
+
+134
+00:07:27,922 --> 00:07:31,289
+N'importe quel chatbot convient, et
+laissez de côté tout ce qui est personnel.
+
+135
+00:07:31,339 --> 00:07:34,275
+Si vous bloquez, demandez une
+source sur un point précis
+
+136
+00:07:34,275 --> 00:07:36,796
+et vérifiez qu'elle existe.
+
+137
+00:07:36,950 --> 00:07:39,511
+La prochaine fois : ce
+qu'est vraiment un modèle.
+
+138
+00:07:39,561 --> 00:07:42,879
+Un fichier rempli de nombres, et
+pourquoi en créer un coûte des millions,
+
+139
+00:07:42,879 --> 00:07:47,440
+alors que le faire tourner sur votre ordinateur
+coûte à peine plus que l'électricité.
+
+140
+00:07:47,490 --> 00:07:49,724
+À bientôt dans la leçon trois.
