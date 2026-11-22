@@ -1,0 +1,951 @@
+1
+00:00:00,800 --> 00:00:03,156
+Bugün zaten yapay zekâ kullandın.
+
+2
+00:00:03,206 --> 00:00:05,034
+Muhtemelen kahvaltıdan önce.
+
+3
+00:00:05,084 --> 00:00:07,804
+Telefonun yüzünü tanıdı ve kilidi açtı.
+
+4
+00:00:07,854 --> 00:00:11,133
+E-postan bir dolandırıcılık mesajını
+sessizce spam klasörüne taşıdı.
+
+5
+00:00:11,183 --> 00:00:14,017
+Haritan trafiği tahmin
+etti ve rotanı değiştirdi.
+
+6
+00:00:14,067 --> 00:00:16,533
+Klavyen bir kelimeyi
+senden önce tamamladı.
+
+7
+00:00:16,583 --> 00:00:19,864
+Hiçbirinin kutusunda
+"yapay zekâ" yazmıyordu.
+
+8
+00:00:19,914 --> 00:00:22,850
+Göremediğin bir yerde, öylece çalıştı.
+
+9
+00:00:22,992 --> 00:00:25,731
+Sonra, birkaç yıl önce,
+yeni bir tür geldi.
+
+10
+00:00:25,781 --> 00:00:27,302
+Konuşabildiğin bir tür.
+
+11
+00:00:27,352 --> 00:00:30,543
+Yazıyor, açıklıyor, çeviriyor
+ve seninle tartışıyor.
+
+12
+00:00:30,593 --> 00:00:34,567
+Ve neredeyse tamamı başka birinin
+bilgisayarında çalışıyor.
+
+13
+00:00:34,700 --> 00:00:38,916
+Bu kurs, o tür yapay zekâyı
+sıfırdan anlamakla ilgili.
+
+14
+00:00:38,966 --> 00:00:42,626
+Ve son derste, kendi bilgisayarında
+çalışan bir tanesine sahip olacaksın.
+
+15
+00:00:42,676 --> 00:00:43,832
+Hesap yok.
+
+16
+00:00:43,882 --> 00:00:45,220
+Abonelik yok.
+
+17
+00:00:45,270 --> 00:00:47,496
+İnternet gerekmiyor.
+
+18
+00:00:54,658 --> 00:00:57,007
+AI101'e hoş geldin.
+
+19
+00:00:57,057 --> 00:00:59,622
+Bu kurs hiç model eğitmemiş,
+
+20
+00:00:59,622 --> 00:01:03,657
+hiç terminal açmamış, belki modelin ne
+olduğundan bile emin olmayanlar için.
+
+21
+00:01:03,707 --> 00:01:06,755
+Başlamak için tam da doğru yer.
+
+22
+00:01:06,908 --> 00:01:08,058
+Anlaşma şu.
+
+23
+00:01:08,108 --> 00:01:09,083
+Ücretsiz.
+
+24
+00:01:09,133 --> 00:01:12,810
+Sponsor yok, satış ortaklığı bağlantısı
+yok, satın alacak hiçbir şey yok.
+
+25
+00:01:12,860 --> 00:01:17,616
+Bir araç kullandığımızda nedenini söyleyeceğiz
+ve en az bir alternatif göstereceğiz.
+
+26
+00:01:17,666 --> 00:01:21,942
+Bu teknolojinin neler yapabildiği kadar, neler
+yapamadığı konusunda da dürüst olacağız.
+
+27
+00:01:21,992 --> 00:01:23,389
+Ve yavaş gideceğiz.
+
+28
+00:01:23,439 --> 00:01:27,089
+Her kelime ilk geçtiği yerde açıklanacak.
+
+29
+00:01:27,242 --> 00:01:28,543
+Neye ihtiyacın var?
+
+30
+00:01:28,593 --> 00:01:29,677
+Bir bilgisayara.
+
+31
+00:01:29,727 --> 00:01:33,825
+Son birkaç yılda çıkmışsa ve
+en az 8 GB belleği varsa,
+
+32
+00:01:33,825 --> 00:01:36,171
+büyük ihtimalle küçük bir
+model çalıştırabilir.
+
+33
+00:01:36,221 --> 00:01:39,389
+Beşinci ders, seninkine tam olarak
+neyin sığacağını söyleyecek.
+
+34
+00:01:39,439 --> 00:01:40,848
+Kod yazmayı bilmen gerekmiyor.
+
+35
+00:01:40,898 --> 00:01:43,276
+Pahalı bir ekran kartına ihtiyacın yok.
+
+36
+00:01:43,326 --> 00:01:45,614
+Kimseye para ödemen gerekmiyor.
+
+37
+00:01:45,783 --> 00:01:46,965
+Bir şey daha.
+
+38
+00:01:47,015 --> 00:01:49,396
+Bu alandaki araçlar her ay değişiyor.
+
+39
+00:01:49,446 --> 00:01:51,290
+Bu yüzden videolar fikirleri anlatıyor,
+
+40
+00:01:51,290 --> 00:01:55,534
+tam adımlar ise güncel tuttuğumuz
+yazılı bir rehberde duruyor.
+
+41
+00:01:55,584 --> 00:01:58,165
+Bağlantı açıklamada.
+
+42
+00:02:00,908 --> 00:02:04,252
+Kelimelerle başlayalım, çünkü insanlar
+onları gelişigüzel kullanıyor
+
+43
+00:02:04,252 --> 00:02:06,528
+ve bu da büyük bir kafa
+karışıklığına yol açıyor.
+
+44
+00:02:06,578 --> 00:02:09,420
+Yapay zekâ en büyük daire.
+
+45
+00:02:09,470 --> 00:02:10,550
+Alanın tamamı:
+
+46
+00:02:10,550 --> 00:02:14,983
+bir insan yapsa zekâ gerektirecek
+işleri makinelere yaptırmak.
+
+47
+00:02:15,033 --> 00:02:16,645
+Bir yüzü tanımak.
+
+48
+00:02:16,695 --> 00:02:17,931
+Bir rota planlamak.
+
+49
+00:02:17,981 --> 00:02:19,144
+Satranç oynamak.
+
+50
+00:02:19,194 --> 00:02:21,640
+Bir cümleyi anlamak.
+
+51
+00:02:21,783 --> 00:02:26,068
+On yıllar boyunca bunu yapmanın
+ana yolu kuralları elle yazmaktı.
+
+52
+00:02:26,118 --> 00:02:28,543
+Bu yolla bir spam
+filtresi yaptığını düşün.
+
+53
+00:02:28,593 --> 00:02:31,200
+E-postada "free money" (bedava
+para) yazıyorsa, spam'dir.
+
+54
+00:02:31,250 --> 00:02:33,174
+"You won" (kazandınız)
+yazıyorsa, spam'dir.
+
+55
+00:02:33,224 --> 00:02:37,333
+Dolandırıcılar "fr3e m0ney"
+yazana kadar işe yarar.
+
+56
+00:02:37,383 --> 00:02:38,990
+Sonra yeni bir kurala ihtiyacın olur.
+
+57
+00:02:39,040 --> 00:02:40,730
+Ve bir tane daha.
+
+58
+00:02:40,867 --> 00:02:43,320
+Makine öğrenmesi bir içteki daire.
+
+59
+00:02:43,370 --> 00:02:46,943
+Kuralları yazmak yerine bilgisayara
+örnekler gösteriyorsun.
+
+60
+00:02:46,993 --> 00:02:50,545
+Spam diye işaretlenmiş binlerce e-posta,
+sorunsuz diye işaretlenmiş binlercesi.
+
+61
+00:02:50,595 --> 00:02:52,735
+Program kalıpları kendisi buluyor,
+
+62
+00:02:52,735 --> 00:02:57,058
+hiçbir insanın yazmayı aklına
+getirmeyeceği kalıplar dahil.
+
+63
+00:02:57,200 --> 00:02:59,538
+Derin öğrenme onun içindeki bir daire.
+
+64
+00:02:59,588 --> 00:03:02,394
+Sinir ağlarıyla yapılan makine öğrenmesi:
+
+65
+00:03:02,394 --> 00:03:05,762
+çok katman halinde üst üste dizilmiş,
+uzun basit matematik zincirleri.
+
+66
+00:03:05,812 --> 00:03:08,185
+Her katman sayıları bir
+sonrakine aktarıyor.
+
+67
+00:03:08,235 --> 00:03:12,142
+Eğitim sırasında bu sayıların
+milyonlarcası, hatta milyarlarcası,
+
+68
+00:03:12,142 --> 00:03:15,491
+cevaplar iyileşene kadar
+azar azar ayarlanıyor.
+
+69
+00:03:15,541 --> 00:03:17,483
+"Derin" sadece çok katman demek.
+
+70
+00:03:17,533 --> 00:03:19,791
+Mistik bir anlamda derin değil.
+
+71
+00:03:19,841 --> 00:03:22,843
+Çok fazla veri ve çok fazla
+işlem gücü gerektiriyor,
+
+72
+00:03:22,843 --> 00:03:27,539
+bu yüzden ancak son on beş yılda
+gerçekten yükselişe geçti.
+
+73
+00:03:27,700 --> 00:03:33,017
+Derin öğrenmenin içinde de bu kursun asıl
+konusu olan daire var: dil modelleri.
+
+74
+00:03:33,067 --> 00:03:35,709
+Dil modeli, devasa miktarda metin üzerinde
+
+75
+00:03:35,709 --> 00:03:38,411
+tek bir iş için eğitilmiş
+bir sinir ağıdır:
+
+76
+00:03:38,411 --> 00:03:40,183
+sırada ne geldiğini tahmin etmek.
+
+77
+00:03:40,233 --> 00:03:42,342
+Bu, işe yarayamayacak kadar basit geliyor.
+
+78
+00:03:42,392 --> 00:03:44,466
+İkinci ders neden öyle
+olmadığını gösteriyor.
+
+79
+00:03:44,516 --> 00:03:48,823
+Adını duyduğun sohbet botları, bir
+uygulamaya sarılmış dil modelleri.
+
+80
+00:03:48,992 --> 00:03:51,459
+"Üretken yapay zekâ"
+ifadesini de duyacaksın.
+
+81
+00:03:51,509 --> 00:03:56,230
+Yeni bir şey üreten modeller
+demek: metin, görüntü, ses, video.
+
+82
+00:03:56,280 --> 00:03:58,348
+Dil modelleri bunun bir türü.
+
+83
+00:03:58,398 --> 00:04:01,072
+Görüntü üreticileri başka bir türü.
+
+84
+00:04:01,242 --> 00:04:02,026
+Özetle.
+
+85
+00:04:02,076 --> 00:04:03,715
+Yapay zekâ, alanın kendisi.
+
+86
+00:04:03,765 --> 00:04:06,469
+Makine öğrenmesi, örneklerden öğrenmek.
+
+87
+00:04:06,519 --> 00:04:10,047
+Derin öğrenme, bunu çok katmanlı
+sinir ağlarıyla yapmak.
+
+88
+00:04:10,097 --> 00:04:14,044
+Dil modelleri de metin üzerinde
+eğitilmiş derin öğrenme.
+
+89
+00:04:16,783 --> 00:04:19,827
+Bunların hiçbiri 2022'de başlamadı.
+
+90
+00:04:19,992 --> 00:04:21,302
+1950.
+
+91
+00:04:21,352 --> 00:04:26,215
+Matematikçi Alan Turing, basit bir
+soruyla açılan bir makale yayımlıyor:
+
+92
+00:04:26,215 --> 00:04:27,812
+Makineler düşünebilir mi?
+
+93
+00:04:27,862 --> 00:04:30,626
+Soruyu cevaplamak yerine
+bir test öneriyor.
+
+94
+00:04:30,676 --> 00:04:33,586
+Bir sohbette makineyi
+insandan ayırt edemiyorsan,
+
+95
+00:04:33,586 --> 00:04:35,991
+aradaki fark önemli mi?
+
+96
+00:04:36,158 --> 00:04:37,750
+1956.
+
+97
+00:04:37,800 --> 00:04:39,793
+Küçük bir araştırmacı grubu bir yazı
+
+98
+00:04:39,793 --> 00:04:42,756
+ABD'deki Dartmouth College'da geçiriyor.
+
+99
+00:04:42,806 --> 00:04:44,638
+O çalıştayın önerisi,
+
+100
+00:04:44,638 --> 00:04:47,849
+"yapay zekâ" adının ortaya çıktığı yer.
+
+101
+00:04:47,899 --> 00:04:51,524
+Tek bir yazda gerçek bir
+ilerleme bekliyorlardı.
+
+102
+00:04:51,658 --> 00:04:53,162
+1958.
+
+103
+00:04:53,212 --> 00:04:55,863
+Frank Rosenblatt perceptron'u tanıtıyor:
+
+104
+00:04:55,863 --> 00:05:00,634
+basit kalıpları örneklerden
+tanımayı öğrenen erken bir makine.
+
+105
+00:05:00,684 --> 00:05:04,148
+Bugünkü her sinir ağının büyükbabası.
+
+106
+00:05:04,283 --> 00:05:05,938
+1966.
+
+107
+00:05:05,988 --> 00:05:08,855
+MIT'den Joseph Weizenbaum,
+ELIZA'yı yazıyor:
+
+108
+00:05:08,855 --> 00:05:15,387
+cümlelerini sana soru olarak geri çevirerek
+bir terapisti taklit eden bir program.
+
+109
+00:05:15,437 --> 00:05:16,952
+Hiçbir şey anlamıyor.
+
+110
+00:05:17,002 --> 00:05:19,960
+Yine de insanlar ona içini döktü.
+
+111
+00:05:20,117 --> 00:05:24,139
+Weizenbaum sonradan, onu yaparken
+izlemiş olan kendi sekreterinin
+
+112
+00:05:24,139 --> 00:05:27,797
+onunla baş başa konuşabilmek için
+odadan çıkmasını istediğini yazdı.
+
+113
+00:05:27,847 --> 00:05:29,916
+Buna hâlâ ELIZA etkisi diyoruz:
+
+114
+00:05:29,916 --> 00:05:33,347
+akıcı biçimde karşılık veren
+her şeyde bir zihin görüyoruz.
+
+115
+00:05:33,397 --> 00:05:34,780
+Bunu aklında tut.
+
+116
+00:05:34,830 --> 00:05:36,790
+Hâlâ geçerli.
+
+117
+00:05:36,950 --> 00:05:38,539
+Sonra para bitti.
+
+118
+00:05:38,589 --> 00:05:42,066
+Vaatler çok büyük,
+bilgisayarlar çok küçüktü.
+
+119
+00:05:42,116 --> 00:05:47,012
+1970'lerde ve yine 1980'lerin
+sonunda fonlar kurudu.
+
+120
+00:05:47,062 --> 00:05:50,725
+Bu dönemlere yapay zekâ kışları deniyor.
+
+121
+00:05:50,867 --> 00:05:52,467
+1997.
+
+122
+00:05:52,517 --> 00:05:57,628
+IBM'in Deep Blue'su dünya satranç
+şampiyonu Garry Kasparov'u yeniyor.
+
+123
+00:05:57,678 --> 00:05:59,532
+Ama Deep Blue satrancı öğrenmedi.
+
+124
+00:05:59,582 --> 00:06:03,098
+Saniyede yaklaşık iki yüz
+milyon pozisyonu taradı,
+
+125
+00:06:03,098 --> 00:06:07,493
+yapımcılarının elle yazdığı kuralları
+ve değerlendirmeleri kullanarak.
+
+126
+00:06:07,658 --> 00:06:08,770
+2012.
+
+127
+00:06:08,820 --> 00:06:10,822
+Her şey sessizce değişiyor.
+
+128
+00:06:10,872 --> 00:06:16,788
+AlexNet adlı bir sinir ağı, fotoğraflardaki
+nesneleri tanıma yarışmasına giriyor
+
+129
+00:06:16,788 --> 00:06:18,959
+ve açık ara kazanıyor.
+
+130
+00:06:19,009 --> 00:06:23,918
+İki ekran kartı üzerinde eğitilmişti, video
+oyunları için yapılan türden çiplerle.
+
+131
+00:06:23,968 --> 00:06:28,453
+Ekran kartlarının, sinir ağlarının ihtiyaç
+duyduğu matematikte çok iyi olduğu ortaya çıktı.
+
+132
+00:06:28,503 --> 00:06:32,822
+O zamandan beri derin öğrenme alanın
+neredeyse tamamını ele geçirdi.
+
+133
+00:06:32,992 --> 00:06:34,388
+2017.
+
+134
+00:06:34,438 --> 00:06:39,262
+Google'dan sekiz araştırmacı "Attention Is
+All You Need" adlı bir makale yayımlıyor.
+
+135
+00:06:39,312 --> 00:06:41,124
+Makale transformer'ı tanıtıyor:
+
+136
+00:06:41,124 --> 00:06:44,417
+dili çok daha iyi işleyen
+
+137
+00:06:44,417 --> 00:06:47,676
+ve devasa ölçekte eğitilebilen
+yeni bir sinir ağı tasarımı.
+
+138
+00:06:47,726 --> 00:06:51,716
+GPT'deki "T", transformer'ın kısaltması.
+
+139
+00:06:51,867 --> 00:06:53,254
+2022.
+
+140
+00:06:53,304 --> 00:06:58,737
+Transformer üzerine kurulu bir sohbet botu herkese
+açılıyor ve birkaç hafta içinde her yerde.
+
+141
+00:06:58,867 --> 00:07:00,274
+2023.
+
+142
+00:07:00,324 --> 00:07:03,858
+Meta, LLaMA adlı dil modelini
+araştırmacılarla paylaşıyor.
+
+143
+00:07:03,908 --> 00:07:07,016
+Yaklaşık bir hafta içinde
+ağırlıklar tüm internete sızıyor.
+
+144
+00:07:07,066 --> 00:07:09,629
+İnsanlar onu kendi dizüstülerinde
+çalıştırmaya başlıyor.
+
+145
+00:07:09,679 --> 00:07:13,347
+O zamandan beri sürekli bir açık
+ağırlıklı model akışı geldi,
+
+146
+00:07:13,347 --> 00:07:16,528
+ABD'deki, Fransa'daki ve
+Çin'deki laboratuvarlardan.
+
+147
+00:07:16,578 --> 00:07:20,177
+Bu kursun var olabilmesinin sebebi o akış.
+
+148
+00:07:20,325 --> 00:07:21,705
+Örüntüye dikkat et.
+
+149
+00:07:21,755 --> 00:07:23,016
+Büyük vaatler.
+
+150
+00:07:23,066 --> 00:07:24,248
+Hayal kırıklığı.
+
+151
+00:07:24,298 --> 00:07:25,669
+Sessiz bir atılım.
+
+152
+00:07:25,719 --> 00:07:27,976
+Yine büyük vaatler.
+
+153
+00:07:28,117 --> 00:07:31,469
+Bu sefer farklı olan, üç
+şeyin bir arada gelmesi.
+
+154
+00:07:31,519 --> 00:07:33,489
+İnternetten okyanuslar dolusu metin.
+
+155
+00:07:33,539 --> 00:07:36,170
+Grafik çiplerinden gelen
+ucuz paralel işlem gücü.
+
+156
+00:07:36,220 --> 00:07:39,440
+Ve ikisinden de yararlanmak
+için transformer.
+
+157
+00:07:42,158 --> 00:07:45,410
+Peki bugünün dil modelleri
+gerçekte neyi iyi yapıyor?
+
+158
+00:07:45,460 --> 00:07:47,115
+Dürüst olmak gerekirse, epey şeyi.
+
+159
+00:07:47,165 --> 00:07:49,609
+Metin taslağı yazmakta ve
+yeniden yazmakta iyiler.
+
+160
+00:07:49,659 --> 00:07:51,441
+Uzun bir şeyi özetlemekte.
+
+161
+00:07:51,491 --> 00:07:52,625
+Çeviride.
+
+162
+00:07:52,675 --> 00:07:56,978
+Bir fikri senin seviyende anlatmakta,
+istersen bir kez daha, daha basitçe.
+
+163
+00:07:57,028 --> 00:07:58,195
+Beyin fırtınasında.
+
+164
+00:07:58,245 --> 00:07:59,608
+Koda yardım etmekte.
+
+165
+00:07:59,658 --> 00:08:03,118
+Dağınık notları düzenli
+bir şeye dönüştürmekte.
+
+166
+00:08:03,283 --> 00:08:04,827
+Peki neyi kötü yapıyorlar?
+
+167
+00:08:04,877 --> 00:08:07,208
+Tam bir özgüvenle yanılabiliyorlar.
+
+168
+00:08:07,258 --> 00:08:09,927
+Bir dil modeli kulağa
+olası gelen şeyi üretir
+
+169
+00:08:09,927 --> 00:08:13,164
+ve "kulağa olası gelmek", "doğru
+olmak" ile aynı şey değildir.
+
+170
+00:08:13,214 --> 00:08:17,413
+Gerçekleri, kaynakları ya da alıntıları
+uydurduğunda buna halüsinasyon denir.
+
+171
+00:08:17,463 --> 00:08:19,947
+Sadece eğitim verisinde olanı bilir,
+
+172
+00:08:19,947 --> 00:08:23,718
+bir arama aracına bağlı değilse,
+belli bir kesim tarihine kadar.
+
+173
+00:08:23,768 --> 00:08:28,869
+Sen anlatmadıkça senin hayatını,
+dosyalarını ya da durumunu bilmez.
+
+174
+00:08:29,033 --> 00:08:30,575
+Ve ELIZA'yı hatırla.
+
+175
+00:08:30,625 --> 00:08:33,746
+Akıcı olmak, anlamakla aynı şey değil.
+
+176
+00:08:33,908 --> 00:08:35,625
+Gerçekten düşünüyor mu?
+
+177
+00:08:35,675 --> 00:08:40,384
+Ciddi araştırmacılar bu konuda anlaşamıyor ve biz
+bunu birinci derste çözmüş gibi yapmayacağız.
+
+178
+00:08:40,434 --> 00:08:43,965
+Bu kurs için pratik bir kural yeterli.
+
+179
+00:08:44,117 --> 00:08:45,658
+Ona çok hızlı,
+
+180
+00:08:45,658 --> 00:08:49,543
+çok okumuş ama bazen kendinden emin
+şekilde yanılan bir asistan gibi davran.
+
+181
+00:08:49,593 --> 00:08:50,534
+Kullan.
+
+182
+00:08:50,584 --> 00:08:51,684
+Ondan öğren.
+
+183
+00:08:51,734 --> 00:08:53,809
+Önemli olanı kontrol et.
+
+184
+00:08:56,533 --> 00:08:57,667
+İşte harita.
+
+185
+00:08:57,717 --> 00:08:59,441
+Birinci bölüm: anlamak.
+
+186
+00:08:59,491 --> 00:09:02,741
+Bir dil modeli nasıl çalışır,
+bir model aslında nedir,
+
+187
+00:09:02,741 --> 00:09:06,630
+açık ve kapalı modeller ve bilgisayarının
+bir tanesini çalıştırıp çalıştıramayacağı.
+
+188
+00:09:06,680 --> 00:09:08,566
+Henüz hiçbir şey kurmuyoruz.
+
+189
+00:09:08,616 --> 00:09:10,089
+İkinci bölüm: çalıştırmak.
+
+190
+00:09:10,139 --> 00:09:14,422
+Güvenle indirmek, terminale
+dokunmadan ilk yerel modelin,
+
+191
+00:09:14,422 --> 00:09:18,289
+sonra terminalin kendisi, model
+seçmek ve onu iyi kullanmak.
+
+192
+00:09:18,339 --> 00:09:20,154
+Üçüncü bölüm: senin olsun.
+
+193
+00:09:20,204 --> 00:09:22,599
+Kendi belgelerinle gizlice sohbet etmek,
+
+194
+00:09:22,599 --> 00:09:26,995
+ses ve görüntüler, hepsini sağlıklı
+tutmak ve bilgiyi aktarmak.
+
+195
+00:09:27,158 --> 00:09:30,585
+Sonunda, senin makinende
+yaşayan bir yapay zekân olacak.
+
+196
+00:09:30,635 --> 00:09:32,805
+Kablo çekiliyken de cevap veriyor.
+
+197
+00:09:32,855 --> 00:09:35,097
+Konuşmalarını başka kimse görmüyor.
+
+198
+00:09:35,147 --> 00:09:38,665
+Kimse fiyatı artıramaz
+ya da onu kapatamaz.
+
+199
+00:09:38,825 --> 00:09:41,320
+Bu kurs daha büyük bir şeyin bir parçası.
+
+200
+00:09:41,370 --> 00:09:42,257
+Biz ainarchy'yiz,
+
+201
+00:09:42,257 --> 00:09:44,769
+herkesin bu teknolojiyle
+bir şeyler inşa edebilmesi
+
+202
+00:09:44,769 --> 00:09:47,520
+gerektiğini düşünen açık bir topluluk.
+
+203
+00:09:47,520 --> 00:09:49,762
+Hem de özgürce ve ücretsiz.
+
+204
+00:09:49,908 --> 00:09:55,004
+Her ders, Telegram grubumuzda BUILD
+adlı bir odada küçük bir görevle biter.
+
+205
+00:09:55,054 --> 00:10:00,155
+Asıl öğrenme orada oluyor: her seviyede,
+insanların insanlara yardım etmesiyle.
+
+206
+00:10:00,325 --> 00:10:01,982
+İlk görevin kolay.
+
+207
+00:10:02,032 --> 00:10:04,225
+BUILD'e git ve kendini tanıt.
+
+208
+00:10:04,275 --> 00:10:06,773
+Bize hangi bilgisayarın
+olduğunu söyle, biliyorsan,
+
+209
+00:10:06,773 --> 00:10:11,188
+ve kendi makinende çalışan bir yapay
+zekâyla yapmak istediğin bir şeyi.
+
+210
+00:10:11,238 --> 00:10:13,204
+Kişisel bilgi gerekmiyor.
+
+211
+00:10:13,254 --> 00:10:14,961
+Bu kadar.
+
+212
+00:10:15,117 --> 00:10:17,828
+Gelecek sefere: bir dil
+modeli aslında nasıl çalışır
+
+213
+00:10:17,828 --> 00:10:20,290
+ve neden bazen bir şeyler uydurur.
+
+214
+00:10:20,340 --> 00:10:22,523
+İkinci derste görüşürüz.

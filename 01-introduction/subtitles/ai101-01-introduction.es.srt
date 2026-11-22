@@ -1,0 +1,967 @@
+1
+00:00:00,800 --> 00:00:03,156
+Hoy ya has usado IA.
+
+2
+00:00:03,206 --> 00:00:05,034
+Probablemente antes del desayuno.
+
+3
+00:00:05,084 --> 00:00:07,804
+Tu móvil reconoció tu
+cara y se desbloqueó.
+
+4
+00:00:07,854 --> 00:00:11,133
+Tu correo movió en silencio una
+estafa a la carpeta de spam.
+
+5
+00:00:11,183 --> 00:00:14,017
+Tu mapa adivinó el
+tráfico y cambió tu ruta.
+
+6
+00:00:14,067 --> 00:00:16,533
+Tu teclado terminó una
+palabra antes que tú.
+
+7
+00:00:16,583 --> 00:00:19,864
+Nada de eso decía "inteligencia
+artificial" en la caja.
+
+8
+00:00:19,914 --> 00:00:22,850
+Simplemente funcionaba, en
+algún lugar que no podías ver.
+
+9
+00:00:22,992 --> 00:00:25,731
+Luego, hace unos años,
+llegó un tipo nuevo.
+
+10
+00:00:25,781 --> 00:00:27,302
+El tipo con el que puedes hablar.
+
+11
+00:00:27,352 --> 00:00:30,543
+Escribe, explica, traduce
+y te lleva la contraria.
+
+12
+00:00:30,593 --> 00:00:34,567
+Y casi todo funciona en el
+ordenador de otra persona.
+
+13
+00:00:34,700 --> 00:00:38,916
+Este curso trata de entender
+ese tipo de IA, desde cero.
+
+14
+00:00:38,966 --> 00:00:42,626
+Y en la última lección tendrás una
+funcionando en tu propio ordenador.
+
+15
+00:00:42,676 --> 00:00:43,832
+Sin cuenta.
+
+16
+00:00:43,882 --> 00:00:45,220
+Sin suscripción.
+
+17
+00:00:45,270 --> 00:00:47,496
+Sin necesidad de internet.
+
+18
+00:00:54,658 --> 00:00:57,007
+Te damos la bienvenida a AI101.
+
+19
+00:00:57,057 --> 00:00:59,622
+Es para quien nunca ha
+entrenado un modelo,
+
+20
+00:00:59,622 --> 00:01:03,657
+nunca ha abierto una terminal y quizá
+ni siquiera sabe bien qué es un modelo.
+
+21
+00:01:03,707 --> 00:01:06,755
+Ese es justo el lugar
+adecuado para empezar.
+
+22
+00:01:06,908 --> 00:01:08,058
+El trato es este.
+
+23
+00:01:08,108 --> 00:01:09,083
+Es gratis.
+
+24
+00:01:09,133 --> 00:01:12,810
+No hay patrocinadores, ni enlaces
+de afiliados, ni nada que comprar.
+
+25
+00:01:12,860 --> 00:01:17,616
+Cuando usemos una herramienta, te diremos por
+qué y te mostraremos al menos una alternativa.
+
+26
+00:01:17,666 --> 00:01:21,942
+Seremos honestos sobre lo que esta tecnología
+no puede hacer, no solo sobre lo que puede.
+
+27
+00:01:21,992 --> 00:01:23,389
+E iremos despacio.
+
+28
+00:01:23,439 --> 00:01:27,089
+Cada palabra se explica la
+primera vez que aparece.
+
+29
+00:01:27,242 --> 00:01:28,543
+¿Qué necesitas?
+
+30
+00:01:28,593 --> 00:01:29,677
+Un ordenador.
+
+31
+00:01:29,727 --> 00:01:33,825
+Si es de los últimos años y
+tiene al menos 8 GB de memoria,
+
+32
+00:01:33,825 --> 00:01:36,171
+muy probablemente puede
+ejecutar un modelo pequeño.
+
+33
+00:01:36,221 --> 00:01:39,389
+La lección cinco te dirá
+exactamente qué cabe en el tuyo.
+
+34
+00:01:39,439 --> 00:01:40,848
+No necesitas programar.
+
+35
+00:01:40,898 --> 00:01:43,276
+No necesitas una tarjeta gráfica cara.
+
+36
+00:01:43,326 --> 00:01:45,614
+No necesitas pagar a nadie.
+
+37
+00:01:45,783 --> 00:01:46,965
+Una cosa más.
+
+38
+00:01:47,015 --> 00:01:49,396
+Las herramientas de este
+campo cambian cada mes.
+
+39
+00:01:49,446 --> 00:01:51,290
+Así que los vídeos explican las ideas,
+
+40
+00:01:51,290 --> 00:01:55,534
+y los pasos exactos están en una
+guía escrita que mantenemos al día.
+
+41
+00:01:55,584 --> 00:01:58,165
+El enlace está en la descripción.
+
+42
+00:02:00,908 --> 00:02:04,252
+Empecemos por las palabras, porque
+la gente las usa a la ligera,
+
+43
+00:02:04,252 --> 00:02:06,528
+y eso genera mucha confusión.
+
+44
+00:02:06,578 --> 00:02:09,420
+La inteligencia artificial
+es el círculo más grande.
+
+45
+00:02:09,470 --> 00:02:10,550
+Es todo el campo:
+
+46
+00:02:10,550 --> 00:02:14,983
+lograr que las máquinas hagan cosas que requerirían
+inteligencia si las hiciera una persona.
+
+47
+00:02:15,033 --> 00:02:16,645
+Reconocer una cara.
+
+48
+00:02:16,695 --> 00:02:17,931
+Planificar una ruta.
+
+49
+00:02:17,981 --> 00:02:19,144
+Jugar al ajedrez.
+
+50
+00:02:19,194 --> 00:02:21,640
+Entender una frase.
+
+51
+00:02:21,783 --> 00:02:26,068
+Durante décadas, la forma principal de
+hacerlo era escribir las reglas a mano.
+
+52
+00:02:26,118 --> 00:02:28,543
+Imagina construir así un filtro de spam.
+
+53
+00:02:28,593 --> 00:02:31,200
+Si el correo dice "free money"
+(dinero gratis), es spam.
+
+54
+00:02:31,250 --> 00:02:33,174
+Si dice "you won" (has ganado), es spam.
+
+55
+00:02:33,224 --> 00:02:37,333
+Funciona, hasta que los
+estafadores escriben "fr3e m0ney".
+
+56
+00:02:37,383 --> 00:02:38,990
+Entonces necesitas otra regla.
+
+57
+00:02:39,040 --> 00:02:40,730
+Y otra.
+
+58
+00:02:40,867 --> 00:02:43,320
+El aprendizaje automático
+es el siguiente círculo.
+
+59
+00:02:43,370 --> 00:02:46,943
+En lugar de escribir las reglas,
+le muestras ejemplos al ordenador.
+
+60
+00:02:46,993 --> 00:02:50,545
+Miles de correos marcados como spam,
+miles marcados como correctos.
+
+61
+00:02:50,595 --> 00:02:52,735
+El programa encuentra los
+patrones por sí mismo,
+
+62
+00:02:52,735 --> 00:02:57,058
+incluidos algunos que a ninguna persona
+se le habría ocurrido escribir.
+
+63
+00:02:57,200 --> 00:02:59,538
+El aprendizaje profundo es
+un círculo dentro de ese.
+
+64
+00:02:59,588 --> 00:03:02,394
+Es aprendizaje automático
+hecho con redes neuronales:
+
+65
+00:03:02,394 --> 00:03:05,762
+largas cadenas de matemáticas
+sencillas, apiladas en muchas capas.
+
+66
+00:03:05,812 --> 00:03:08,185
+Cada capa pasa números a la siguiente.
+
+67
+00:03:08,235 --> 00:03:12,142
+Durante el entrenamiento, millones o miles
+de millones de esos números se ajustan,
+
+68
+00:03:12,142 --> 00:03:15,491
+un poquito cada vez, hasta
+que las respuestas mejoran.
+
+69
+00:03:15,541 --> 00:03:17,483
+"Profundo" solo significa muchas capas.
+
+70
+00:03:17,533 --> 00:03:19,791
+No es profundo en ningún sentido místico.
+
+71
+00:03:19,841 --> 00:03:22,843
+Necesita muchos datos y
+mucha potencia de cálculo,
+
+72
+00:03:22,843 --> 00:03:27,539
+por eso solo despegó de verdad
+en los últimos quince años.
+
+73
+00:03:27,700 --> 00:03:33,017
+Y dentro del aprendizaje profundo está el círculo del que
+trata sobre todo este curso: los modelos de lenguaje.
+
+74
+00:03:33,067 --> 00:03:35,709
+Un modelo de lenguaje es
+una red neuronal entrenada
+
+75
+00:03:35,709 --> 00:03:38,411
+con enormes cantidades de texto
+para hacer una sola cosa:
+
+76
+00:03:38,411 --> 00:03:40,183
+predecir lo que viene después.
+
+77
+00:03:40,233 --> 00:03:42,342
+Suena demasiado simple para ser útil.
+
+78
+00:03:42,392 --> 00:03:44,466
+La lección dos muestra por qué no lo es.
+
+79
+00:03:44,516 --> 00:03:48,823
+Los chatbots de los que has oído hablar son
+modelos de lenguaje dentro de una aplicación.
+
+80
+00:03:48,992 --> 00:03:51,459
+También oirás "IA generativa".
+
+81
+00:03:51,509 --> 00:03:56,230
+Significa modelos que crean algo
+nuevo: texto, imágenes, sonido, vídeo.
+
+82
+00:03:56,280 --> 00:03:58,348
+Los modelos de lenguaje son un tipo.
+
+83
+00:03:58,398 --> 00:04:01,072
+Los generadores de imágenes son otro.
+
+84
+00:04:01,242 --> 00:04:02,026
+Entonces.
+
+85
+00:04:02,076 --> 00:04:03,715
+La IA es el campo.
+
+86
+00:04:03,765 --> 00:04:06,469
+El aprendizaje automático
+es aprender de ejemplos.
+
+87
+00:04:06,519 --> 00:04:10,047
+El aprendizaje profundo es hacerlo
+con redes neuronales de muchas capas.
+
+88
+00:04:10,097 --> 00:04:14,044
+Y los modelos de lenguaje son aprendizaje
+profundo entrenado con texto.
+
+89
+00:04:16,783 --> 00:04:19,827
+Nada de esto empezó en 2022.
+
+90
+00:04:19,992 --> 00:04:21,302
+1950.
+
+91
+00:04:21,352 --> 00:04:26,215
+El matemático Alan Turing publica un
+artículo que abre con una pregunta sencilla:
+
+92
+00:04:26,215 --> 00:04:27,812
+¿pueden pensar las máquinas?
+
+93
+00:04:27,862 --> 00:04:30,626
+En lugar de responderla,
+propone una prueba.
+
+94
+00:04:30,676 --> 00:04:33,586
+Si en una conversación no puedes
+distinguir una máquina de una persona,
+
+95
+00:04:33,586 --> 00:04:35,991
+¿importa la diferencia?
+
+96
+00:04:36,158 --> 00:04:37,750
+1956.
+
+97
+00:04:37,800 --> 00:04:39,793
+Un pequeño grupo de investigadores pasa un
+
+98
+00:04:39,793 --> 00:04:42,756
+verano en el Dartmouth
+College, en Estados Unidos.
+
+99
+00:04:42,806 --> 00:04:44,638
+La propuesta de ese taller es
+
+100
+00:04:44,638 --> 00:04:47,849
+de donde viene el nombre
+"inteligencia artificial".
+
+101
+00:04:47,899 --> 00:04:51,524
+Esperaban un avance
+real en un solo verano.
+
+102
+00:04:51,658 --> 00:04:53,162
+1958.
+
+103
+00:04:53,212 --> 00:04:55,863
+Frank Rosenblatt presenta el perceptrón,
+
+104
+00:04:55,863 --> 00:05:00,634
+una de las primeras máquinas que aprenden a
+reconocer patrones simples a partir de ejemplos.
+
+105
+00:05:00,684 --> 00:05:04,148
+Es un abuelo de todas las
+redes neuronales actuales.
+
+106
+00:05:04,283 --> 00:05:05,938
+1966.
+
+107
+00:05:05,988 --> 00:05:08,855
+Joseph Weizenbaum, en
+el MIT, escribe ELIZA,
+
+108
+00:05:08,855 --> 00:05:15,387
+un programa que imita a un terapeuta
+convirtiendo tus frases en preguntas.
+
+109
+00:05:15,437 --> 00:05:16,952
+No entiende nada.
+
+110
+00:05:17,002 --> 00:05:19,960
+Y aun así, la gente se le confiaba.
+
+111
+00:05:20,117 --> 00:05:24,139
+Weizenbaum escribió después que su propia
+secretaria, que lo había visto construirlo,
+
+112
+00:05:24,139 --> 00:05:27,797
+le pidió que saliera de la sala para
+poder hablar con el programa en privado.
+
+113
+00:05:27,847 --> 00:05:29,916
+Todavía lo llamamos el efecto ELIZA:
+
+114
+00:05:29,916 --> 00:05:33,347
+vemos una mente en cualquier cosa
+que nos responda con fluidez.
+
+115
+00:05:33,397 --> 00:05:34,780
+Tenlo en mente.
+
+116
+00:05:34,830 --> 00:05:36,790
+Sigue siendo cierto.
+
+117
+00:05:36,950 --> 00:05:38,539
+Luego se acabó el dinero.
+
+118
+00:05:38,589 --> 00:05:42,066
+Las promesas habían sido demasiado grandes,
+y los ordenadores, demasiado pequeños.
+
+119
+00:05:42,116 --> 00:05:47,012
+En los años setenta, y de nuevo a finales
+de los ochenta, la financiación se secó.
+
+120
+00:05:47,062 --> 00:05:50,725
+A esos periodos se les
+llama inviernos de la IA.
+
+121
+00:05:50,867 --> 00:05:52,467
+1997.
+
+122
+00:05:52,517 --> 00:05:57,628
+Deep Blue, de IBM, vence al campeón
+mundial de ajedrez, Garry Kasparov.
+
+123
+00:05:57,678 --> 00:05:59,532
+Pero Deep Blue no aprendió ajedrez.
+
+124
+00:05:59,582 --> 00:06:03,098
+Exploraba unos doscientos millones
+de posiciones por segundo,
+
+125
+00:06:03,098 --> 00:06:07,493
+con reglas y evaluaciones que sus
+creadores escribieron a mano.
+
+126
+00:06:07,658 --> 00:06:08,770
+2012.
+
+127
+00:06:08,820 --> 00:06:10,822
+Todo cambia, en silencio.
+
+128
+00:06:10,872 --> 00:06:16,788
+Una red neuronal llamada AlexNet entra en un
+concurso de reconocimiento de objetos en fotos
+
+129
+00:06:16,788 --> 00:06:18,959
+y gana por un margen enorme.
+
+130
+00:06:19,009 --> 00:06:23,918
+Se entrenó con dos tarjetas gráficas, el
+mismo tipo de chips hecho para videojuegos.
+
+131
+00:06:23,968 --> 00:06:28,453
+Las tarjetas gráficas resultaron ser muy buenas para
+las matemáticas que necesitan las redes neuronales.
+
+132
+00:06:28,503 --> 00:06:32,822
+Desde entonces, el aprendizaje profundo
+se ha apoderado de casi todo el campo.
+
+133
+00:06:32,992 --> 00:06:34,388
+2017.
+
+134
+00:06:34,438 --> 00:06:39,262
+Ocho investigadores de Google publican un
+artículo llamado "Attention Is All You Need".
+
+135
+00:06:39,312 --> 00:06:41,124
+Presenta el transformer,
+
+136
+00:06:41,124 --> 00:06:44,417
+un nuevo diseño de red neuronal
+que maneja el lenguaje
+
+137
+00:06:44,417 --> 00:06:47,676
+mucho mejor y se puede
+entrenar a una escala enorme.
+
+138
+00:06:47,726 --> 00:06:51,716
+La "T" de GPT significa transformer.
+
+139
+00:06:51,867 --> 00:06:53,254
+2022.
+
+140
+00:06:53,304 --> 00:06:58,737
+Un chatbot basado en un transformer se abre al
+público y, en pocas semanas, está en todas partes.
+
+141
+00:06:58,867 --> 00:07:00,274
+2023.
+
+142
+00:07:00,324 --> 00:07:03,858
+Meta comparte su modelo de lenguaje,
+LLaMA, con investigadores.
+
+143
+00:07:03,908 --> 00:07:07,016
+En más o menos una semana, los
+pesos se filtran a todo internet.
+
+144
+00:07:07,066 --> 00:07:09,629
+La gente empieza a ejecutarlo
+en sus propios portátiles.
+
+145
+00:07:09,679 --> 00:07:13,347
+Desde entonces ha llegado un flujo
+constante de modelos de pesos abiertos,
+
+146
+00:07:13,347 --> 00:07:16,528
+de laboratorios de Estados
+Unidos, Francia y China.
+
+147
+00:07:16,578 --> 00:07:20,177
+Ese flujo es la razón por la
+que este curso puede existir.
+
+148
+00:07:20,325 --> 00:07:21,705
+Fíjate en el patrón.
+
+149
+00:07:21,755 --> 00:07:23,016
+Grandes promesas.
+
+150
+00:07:23,066 --> 00:07:24,248
+Decepción.
+
+151
+00:07:24,298 --> 00:07:25,669
+Un avance silencioso.
+
+152
+00:07:25,719 --> 00:07:27,976
+Otra vez grandes promesas.
+
+153
+00:07:28,117 --> 00:07:31,469
+Lo diferente esta vez son
+tres cosas que llegan juntas.
+
+154
+00:07:31,519 --> 00:07:33,489
+Océanos de texto de internet.
+
+155
+00:07:33,539 --> 00:07:36,170
+Computación paralela barata
+gracias a los chips gráficos.
+
+156
+00:07:36,220 --> 00:07:39,440
+Y el transformer, para aprovechar ambas.
+
+157
+00:07:42,158 --> 00:07:45,410
+Entonces, ¿qué hacen bien de verdad
+los modelos de lenguaje actuales?
+
+158
+00:07:45,460 --> 00:07:47,115
+Sinceramente, bastantes cosas.
+
+159
+00:07:47,165 --> 00:07:49,609
+Son buenos redactando
+y reescribiendo texto.
+
+160
+00:07:49,659 --> 00:07:51,441
+Resumiendo algo largo.
+
+161
+00:07:51,491 --> 00:07:52,625
+Traduciendo.
+
+162
+00:07:52,675 --> 00:07:56,978
+Explicando una idea a tu nivel, y
+otra vez más sencillo si se lo pides.
+
+163
+00:07:57,028 --> 00:07:58,195
+Haciendo lluvias de ideas.
+
+164
+00:07:58,245 --> 00:07:59,608
+Ayudando con código.
+
+165
+00:07:59,658 --> 00:08:03,118
+Convirtiendo notas desordenadas
+en algo organizado.
+
+166
+00:08:03,283 --> 00:08:04,827
+¿Y en qué son malos?
+
+167
+00:08:04,877 --> 00:08:07,208
+Pueden equivocarse con total seguridad.
+
+168
+00:08:07,258 --> 00:08:09,927
+Un modelo de lenguaje produce
+lo que suena probable,
+
+169
+00:08:09,927 --> 00:08:13,164
+y "suena probable" no es
+lo mismo que "es verdad".
+
+170
+00:08:13,214 --> 00:08:17,413
+Cuando inventa datos, fuentes o
+citas, eso se llama alucinación.
+
+171
+00:08:17,463 --> 00:08:19,947
+Solo sabe lo que había en
+sus datos de entrenamiento,
+
+172
+00:08:19,947 --> 00:08:23,718
+hasta una fecha de corte, a menos que esté
+conectado a una herramienta de búsqueda.
+
+173
+00:08:23,768 --> 00:08:28,869
+No conoce tu vida, tus archivos ni tu
+situación a menos que se lo cuentes.
+
+174
+00:08:29,033 --> 00:08:30,575
+Y recuerda a ELIZA.
+
+175
+00:08:30,625 --> 00:08:33,746
+Hablar con fluidez no es
+lo mismo que entender.
+
+176
+00:08:33,908 --> 00:08:35,625
+¿Está pensando de verdad?
+
+177
+00:08:35,675 --> 00:08:40,384
+Investigadores serios no se ponen de acuerdo, y no
+vamos a fingir que lo resolvemos en la lección uno.
+
+178
+00:08:40,434 --> 00:08:43,965
+Para este curso, basta
+con una regla práctica.
+
+179
+00:08:44,117 --> 00:08:45,658
+Trátalo como un asistente muy rápido,
+
+180
+00:08:45,658 --> 00:08:49,543
+que ha leído muchísimo y que a veces
+se equivoca con total seguridad.
+
+181
+00:08:49,593 --> 00:08:50,534
+Úsalo.
+
+182
+00:08:50,584 --> 00:08:51,684
+Aprende de él.
+
+183
+00:08:51,734 --> 00:08:53,809
+Comprueba lo que importa.
+
+184
+00:08:56,533 --> 00:08:57,667
+Aquí está el mapa.
+
+185
+00:08:57,717 --> 00:08:59,441
+Parte uno: entender.
+
+186
+00:08:59,491 --> 00:09:02,741
+Cómo funciona un modelo de lenguaje,
+qué es realmente un modelo,
+
+187
+00:09:02,741 --> 00:09:06,630
+abierto frente a cerrado, y si
+tu ordenador puede ejecutar uno.
+
+188
+00:09:06,680 --> 00:09:08,566
+Todavía no se instala nada.
+
+189
+00:09:08,616 --> 00:09:10,089
+Parte dos: ejecutarlo.
+
+190
+00:09:10,139 --> 00:09:14,422
+Cómo descargar de forma segura, tu primer
+modelo local sin tocar una terminal,
+
+191
+00:09:14,422 --> 00:09:18,289
+después la propia terminal,
+elegir un modelo y usarlo bien.
+
+192
+00:09:18,339 --> 00:09:20,154
+Parte tres: hazlo tuyo.
+
+193
+00:09:20,204 --> 00:09:22,599
+Chatear con tus propios
+documentos en privado,
+
+194
+00:09:22,599 --> 00:09:26,995
+voz e imágenes, mantenerlo todo
+en buen estado y pasarlo a otros.
+
+195
+00:09:27,158 --> 00:09:30,585
+Al final, tendrás una IA
+que vive en tu máquina.
+
+196
+00:09:30,635 --> 00:09:32,805
+Responde con el cable desenchufado.
+
+197
+00:09:32,855 --> 00:09:35,097
+Nadie más ve tus conversaciones.
+
+198
+00:09:35,147 --> 00:09:38,665
+Nadie puede subirte el precio ni apagarla.
+
+199
+00:09:38,825 --> 00:09:41,320
+Este curso es parte de algo más grande.
+
+200
+00:09:41,370 --> 00:09:42,257
+Somos ainarchy,
+
+201
+00:09:42,257 --> 00:09:44,769
+un grupo abierto de personas
+que creen que todo el mundo
+
+202
+00:09:44,769 --> 00:09:47,520
+debería poder construir
+con esta tecnología,
+
+203
+00:09:47,520 --> 00:09:49,762
+con libertad y gratis.
+
+204
+00:09:49,908 --> 00:09:55,004
+Cada lección termina con una pequeña tarea en nuestro
+grupo de Telegram, en una sala llamada BUILD.
+
+205
+00:09:55,054 --> 00:10:00,155
+Ahí es donde ocurre el aprendizaje de verdad:
+personas ayudando a personas, en todos los niveles.
+
+206
+00:10:00,325 --> 00:10:01,982
+Tu primera tarea es fácil.
+
+207
+00:10:02,032 --> 00:10:04,225
+Ve a BUILD y preséntate.
+
+208
+00:10:04,275 --> 00:10:06,773
+Cuéntanos qué ordenador
+tienes, si lo sabes,
+
+209
+00:10:06,773 --> 00:10:11,188
+y una cosa que te gustaría hacer con una
+IA que funcione en tu propia máquina.
+
+210
+00:10:11,238 --> 00:10:13,204
+No hacen falta datos personales.
+
+211
+00:10:13,254 --> 00:10:14,961
+Eso es todo.
+
+212
+00:10:15,117 --> 00:10:17,828
+La próxima vez: cómo funciona de
+verdad un modelo de lenguaje,
+
+213
+00:10:17,828 --> 00:10:20,290
+y por qué a veces se inventa cosas.
+
+214
+00:10:20,340 --> 00:10:22,523
+Nos vemos en la lección dos.
