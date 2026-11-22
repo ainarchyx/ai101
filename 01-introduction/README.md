@@ -1,8 +1,8 @@
 # AI101 · 01 — Introduction: what AI actually is
 
-**Video:** coming to YouTube soon; this page will link it. 10:30, subtitles in 9 languages.
-**Task:** introduce yourself in BUILD → https://t.me/ainarchyx
-**Nothing to install** in this lesson.
+- **Video:** coming to YouTube soon; this page will link it. 10:30, subtitles in 9 languages.
+- **Task:** introduce yourself in BUILD → https://t.me/ainarchyx
+- **Nothing to install** in this lesson.
 
 [Transcript](transcript.md) · [Subtitles](subtitles/) · [Glossary](../GLOSSARY.md)
 
@@ -17,20 +17,21 @@ You already use AI every day: face unlock, spam filters, maps, your keyboard's n
 People use these words loosely. They are circles, one inside the other:
 
 ```
-┌─ Artificial intelligence ─────────────────────────────┐
-│  the whole field                                      │
-│  ┌─ Machine learning ──────────────────────────────┐  │
-│  │  learning from examples, not hand-written rules │  │
-│  │  ┌─ Deep learning ───────────────────────────┐  │  │
-│  │  │  machine learning with many-layered       │  │  │
-│  │  │  neural networks                          │  │  │
-│  │  │  ┌─ Language models ───────────────────┐  │  │  │
-│  │  │  │  trained on text to predict what    │  │  │  │
-│  │  │  │  comes next                         │  │  │  │
-│  │  │  └─────────────────────────────────────┘  │  │  │
-│  │  └───────────────────────────────────────────┘  │  │
-│  └─────────────────────────────────────────────────┘  │
-└───────────────────────────────────────────────────────┘
++-- Artificial intelligence ----------------------------+
+|   the whole field                                     |
+|   +-- Machine learning -----------------------------+ |
+|   |   learning from examples,                       | |
+|   |   not hand-written rules                        | |
+|   |   +-- Deep learning --------------------------+ | |
+|   |   |   machine learning with many-layered      | | |
+|   |   |   neural networks                         | | |
+|   |   |   +-- Language models ------------------+ | | |
+|   |   |   |   trained on text to predict        | | | |
+|   |   |   |   what comes next                   | | | |
+|   |   |   +-------------------------------------+ | | |
+|   |   +-------------------------------------------+ | |
+|   +-------------------------------------------------+ |
++-------------------------------------------------------+
 ```
 
 - **Artificial intelligence (AI)** is the whole field: getting machines to do things that would need intelligence if a person did them.
