@@ -8,7 +8,7 @@ Made by **ainarchy**, an open group of people who think everyone should be able 
 
 ## How it works
 
-1. **Watch the lesson.** About ten minutes, on YouTube, with subtitles in nine languages.
+1. **Watch the lesson.** About ten minutes, on YouTube, with subtitles in nine languages. All lessons: [AI101 playlist](https://www.youtube.com/playlist?list=PLTRCPc39pKSI).
 2. **Read the lesson's page here.** Tools in this field change every month, so the videos explain the ideas and this repository holds the exact steps. We keep it up to date.
 3. **Do the small task in BUILD.** That's where the real learning happens: people helping people, at every level.
 
@@ -18,7 +18,7 @@ Made by **ainarchy**, an open group of people who think everyone should be able 
 
 | # | Lesson | |
 |---|---|---|
-| 01 | [Introduction: what AI actually is](01-introduction/) | ready |
+| 01 | [Introduction: what AI actually is](01-introduction/) | [video](https://youtu.be/d9tA7JGl3sk) |
 | 02 | How a language model works | in production |
 | 03 | What a model actually is | planned |
 | 04 | Open and closed | planned |
